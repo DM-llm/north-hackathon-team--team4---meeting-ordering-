@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+
+# 本地运行态
+data/
+runtime/*/
+dist/
+coverage/

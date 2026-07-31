@@ -1,0 +1,73 @@
+{
+  "affects": "会务系统、Agent Runtime、React 前端、本地业务服务、部署脚本",
+  "created": "2026-07-31",
+  "priority": "P1",
+  "related": [],
+  "requires": [],
+  "rfc": "0001",
+  "status": "implementing",
+  "tags": [
+    "hackathon",
+    "meeting",
+    "agent",
+    "runnable"
+  ],
+  "tasks": [
+    {
+      "depends_on": [],
+      "id": "T1",
+      "ref": null,
+      "status": "in-progress",
+      "title": "项目脚手架、初始化数据与本地状态层"
+    },
+    {
+      "depends_on": [
+        "T1"
+      ],
+      "id": "T2",
+      "ref": null,
+      "status": "pending",
+      "title": "基础业务服务闭环：查询、预约、取消、冲突校验"
+    },
+    {
+      "depends_on": [
+        "T1",
+        "T2"
+      ],
+      "id": "T3",
+      "ref": null,
+      "status": "pending",
+      "title": "React 前端基础可运行 Demo"
+    },
+    {
+      "depends_on": [
+        "T2"
+      ],
+      "id": "T4",
+      "ref": null,
+      "status": "pending",
+      "title": "Agent Runtime 接入与结构化意图校验"
+    },
+    {
+      "depends_on": [
+        "T2",
+        "T3"
+      ],
+      "id": "T5",
+      "ref": null,
+      "status": "pending",
+      "title": "挑战功能：合并会议室、动态禁用、管理员调整"
+    },
+    {
+      "depends_on": [
+        "T5"
+      ],
+      "id": "T6",
+      "ref": null,
+      "status": "pending",
+      "title": "三阶段验证、README 与提交冻结"
+    }
+  ],
+  "title": "会务系统三阶段可运行交付方案",
+  "updated": "2026-07-31"
+}

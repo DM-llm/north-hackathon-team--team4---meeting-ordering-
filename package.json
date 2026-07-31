@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "dev:api": "tsx src/server.ts",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "seed:demo": "tsx scripts/seed-demo.ts",
+    "seed:reset": "tsx scripts/seed-demo.ts --reset",
+    "test:business": "tsx scripts/test-business.ts",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tsx": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "@types/react": "latest",
+    "@types/react-dom": "latest"
+  }
+}

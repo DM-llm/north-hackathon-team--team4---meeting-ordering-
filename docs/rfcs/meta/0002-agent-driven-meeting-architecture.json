@@ -1,0 +1,79 @@
+{
+  "affects": "",
+  "created": "2026-07-31",
+  "priority": "P1",
+  "related": [],
+  "requires": [],
+  "rfc": "0002",
+  "status": "implementing",
+  "tags": [
+    "architecture",
+    "nexau",
+    "sqlite",
+    "api-server"
+  ],
+  "tasks": [
+    {
+      "depends_on": [],
+      "id": "T1",
+      "ref": null,
+      "status": "in-progress",
+      "title": "API Server 骨架与路由契约"
+    },
+    {
+      "depends_on": [
+        "T1"
+      ],
+      "id": "T2",
+      "ref": null,
+      "status": "pending",
+      "title": "SQLite 状态持久化与迁移"
+    },
+    {
+      "depends_on": [
+        "T1",
+        "T2"
+      ],
+      "id": "T3",
+      "ref": null,
+      "status": "pending",
+      "title": "Intent Executor 与业务边界"
+    },
+    {
+      "depends_on": [
+        "T1",
+        "T3"
+      ],
+      "id": "T4",
+      "ref": null,
+      "status": "pending",
+      "title": "NexAU HTTP/SSE 接入"
+    },
+    {
+      "depends_on": [
+        "T2",
+        "T3",
+        "T4"
+      ],
+      "id": "T5",
+      "ref": null,
+      "status": "pending",
+      "title": "React 前端切 API Server"
+    },
+    {
+      "depends_on": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5"
+      ],
+      "id": "T6",
+      "ref": null,
+      "status": "pending",
+      "title": "端到端验收与部署文档"
+    }
+  ],
+  "title": "会务系统 Agent 驱动架构与可部署 Demo 设计",
+  "updated": "2026-07-31"
+}
