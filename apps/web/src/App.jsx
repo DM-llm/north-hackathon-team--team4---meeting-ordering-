@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
 
 const DEMO_USER = {
   id: 'demo-admin',
@@ -246,7 +246,7 @@ function inferIntent(text, role) {
     if (/刚才说错|修改|改成|只停用|更新/.test(normalized)) return 'update_rule';
     return 'create_rule';
   }
-  if (/预约|预订|订一下|帮我约/.test(normalized)) {
+  if (/预约|预订|订一下|帮我约|大会议|大会议室|合并/.test(normalized)) {
     if (role === 'admin' && /强制|调整|改到/.test(normalized)) return 'admin_force_update_reservation';
     return 'create_reservation';
   }
