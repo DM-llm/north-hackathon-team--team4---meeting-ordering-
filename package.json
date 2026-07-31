@@ -1,0 +1,26 @@
+{
+  "name": "north-hackathon-team4-meeting-ordering",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/web",
+    "apps/api"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w @north/meeting-api\" \"npm run dev -w @north/meeting-web\"",
+    "dev:api": "npm run dev -w @north/meeting-api",
+    "dev:web": "npm run dev -w @north/meeting-web",
+    "build": "npm run build -w @north/meeting-api && npm run build -w @north/meeting-web",
+    "start:api": "npm run start -w @north/meeting-api",
+    "test": "npm run test -w @north/meeting-api",
+    "seed": "npm run seed -w @north/meeting-api",
+    "prepare:submission": "git status --short && npm run build && npm run test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

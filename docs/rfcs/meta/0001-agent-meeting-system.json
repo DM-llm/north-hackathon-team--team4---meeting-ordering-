@@ -1,0 +1,76 @@
+{
+  "affects": "apps/web, apps/api, packages/domain, docs/rfcs, docs/demo, README.md, .env.example",
+  "created": "2026-07-31",
+  "priority": "P0",
+  "related": [],
+  "requires": [],
+  "rfc": "0001",
+  "status": "implementing",
+  "tags": [
+    "hackathon",
+    "meeting",
+    "agent",
+    "nac",
+    "sqlite"
+  ],
+  "tasks": [
+    {
+      "depends_on": [],
+      "id": "T1",
+      "ref": null,
+      "status": "in-progress",
+      "title": "项目骨架与 SQLite 数据模型"
+    },
+    {
+      "depends_on": [
+        "T1"
+      ],
+      "id": "T2",
+      "ref": null,
+      "status": "pending",
+      "title": "统一区间规则引擎"
+    },
+    {
+      "depends_on": [
+        "T1",
+        "T2"
+      ],
+      "id": "T3",
+      "ref": null,
+      "status": "pending",
+      "title": "基础业务 API 与默认数据"
+    },
+    {
+      "depends_on": [
+        "T3"
+      ],
+      "id": "T4",
+      "ref": null,
+      "status": "pending",
+      "title": "NAC Agent 编排与自然语言意图"
+    },
+    {
+      "depends_on": [
+        "T3",
+        "T4"
+      ],
+      "id": "T5",
+      "ref": null,
+      "status": "pending",
+      "title": "前端核心页面与 Agent 对话"
+    },
+    {
+      "depends_on": [
+        "T3",
+        "T4",
+        "T5"
+      ],
+      "id": "T6",
+      "ref": null,
+      "status": "pending",
+      "title": "可编辑平面图、审计、测试与 README"
+    }
+  ],
+  "title": "Agent 驱动会务系统",
+  "updated": "2026-07-31"
+}
