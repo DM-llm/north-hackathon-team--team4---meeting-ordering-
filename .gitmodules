@@ -1,0 +1,4 @@
+[submodule "runtime/nexau"]
+	path = runtime/nexau
+	url = https://github.com/china-qijizhifeng/nexau.git
+	branch = main
